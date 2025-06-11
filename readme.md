@@ -29,7 +29,7 @@ Also, OptionTree now takes full advantage of the new color schemes introduced in
 If you're like me, you want to know how everything works. Download and activate the [OptionTree Theme](https://github.com/valendesigns/option-tree-theme) and see first hand how to integrate OptionTree into your own project. I'll walk you through installing OptionTree and you'll get a chance to see all the various options and filters first hand and in the wild.
 
 #### Contributing
-To contribute or report bugs, please go to the [OptionTree Github](https://github.com/valendesigns/option-tree) repository.
+To contribute or report bugs, please go to the [OptionTree Github](https://github.com/grabacontroller/option-trees) repository.
 
 #### Sponsorship
 OptionTree is a project partly sponsored by <a href="http://themeforest.net/?ref=valendesigns">ThemeForest</a>, the largest WordPress theme marketplace on the web.
