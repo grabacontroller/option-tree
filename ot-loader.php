@@ -84,7 +84,7 @@ if ( ! class_exists( 'OT_Loader' ) && defined( 'ABSPATH' ) ) {
 			/**
 			 * Current Version number.
 			 */
-			define( 'OT_VERSION', '2.7.3' );
+			define( 'OT_VERSION', '2.7.4' );
 
 			/**
 			 * For developers: Theme mode.
