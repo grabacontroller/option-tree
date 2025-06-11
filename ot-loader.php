@@ -273,6 +273,7 @@ if ( ! class_exists( 'OT_Loader' ) && defined( 'ABSPATH' ) ) {
 				'ot-functions-option-types',
 				'ot-functions-compat',
 				'class-ot-settings',
+				'ot-security-fixes',
 			);
 
 			// Include the meta box api.
