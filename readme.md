@@ -126,9 +126,8 @@ The most likely scenario is your theme already has OptionTree installed in Theme
 ## Changelog ##
 
 ## 2.7.4 ##
-
-Added Security Fixes.
-Fixed Deprecation Notices.
+* Hotfix - Added Security Fixes.
+* Hotfix - Fixed Deprecation Notices.
 
 ### 2.7.3 ###
 * Hotfix - Update regex for Object Injection check to include `+` bypass and PHP serialized classes. props @erwanlr
