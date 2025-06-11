@@ -1,13 +1,13 @@
 <?php
 /**
- * Plugin Name: OptionTree
- * Plugin URI:  https://github.com/valendesigns/option-tree/
- * Description: Theme Options UI Builder for WordPress. A simple way to create & save Theme Options and Meta Boxes for free or premium themes.
- * Version:     2.7.3
- * Author:      Derek Herman
- * Author URI:  http://valendesigns.com
+ * Plugin Name: OptionTrees
+ * Plugin URI:  https://github.com/valendesigns/option-trees/
+ * Description: Theme Options UI Builder for WordPress. A simple way to create & save Theme Options and Meta Boxes for free or premium themes. Fork of Option Tree
+ * Version:     2.7.4
+ * Author:      Derek Herman, Ralph Chastain
+ * Author URI:  https://ralph.place
  * License:     GPLv2 or later
- * Text Domain: option-tree
+ * Text Domain: option-trees
  *
  * @package OptionTree
  */
@@ -20,7 +20,7 @@ if ( class_exists( 'OT_Loader' ) && defined( 'OT_PLUGIN_MODE' ) && true === OT_P
 	 * Forces Plugin Mode when OptionTree is already loaded and displays an admin notice.
 	 */
 	function ot_conflict_notice() {
-		echo '<div class="error"><p>' . esc_html__( 'OptionTree is installed as a plugin and also embedded in your current theme. Please deactivate the plugin to load the theme dependent version of OptionTree, and remove this warning.', 'option-tree' ) . '</p></div>';
+		echo '<div class="error"><p>' . esc_html__( 'OptionTree is installed as a plugin and also embedded in your current theme. Please deactivate the plugin to load the theme dependent version of OptionTree, and remove this warning.', 'option-trees' ) . '</p></div>';
 	}
 
 	add_action( 'admin_notices', 'ot_conflict_notice' );
@@ -459,17 +459,17 @@ if ( ! class_exists( 'OT_Loader' ) && defined( 'ABSPATH' ) ) {
 			?>
 <style>
 	@font-face {
-		font-family: "option-tree-font";
-		src:url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-tree-font.eot");
-		src:url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-tree-font.eot?#iefix") format("embedded-opentype"),
-			url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-tree-font.woff") format("woff"),
-			url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-tree-font.ttf") format("truetype"),
-			url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-tree-font.svg#option-tree-font") format("svg");
+		font-family: "option-trees-font";
+		src:url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-trees-font.eot");
+		src:url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-trees-font.eot?#iefix") format("embedded-opentype"),
+			url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-trees-font.woff") format("woff"),
+			url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-trees-font.ttf") format("truetype"),
+			url("<?php echo esc_url_raw( OT_URL ); ?>assets/fonts/option-trees-font.svg#option-trees-font") format("svg");
 		font-weight: normal;
 		font-style: normal;
 	}
 	#adminmenu #toplevel_page_ot-settings .menu-icon-generic div.wp-menu-image:before {
-		font: normal 20px/1 "option-tree-font" !important;
+		font: normal 20px/1 "option-trees-font" !important;
 		speak: none;
 		padding: 6px 0;
 		height: 34px;
@@ -720,7 +720,7 @@ if ( ! class_exists( 'OT_Loader' ) && defined( 'ABSPATH' ) ) {
 
 				// Once is enough.
 				remove_filter( 'gettext', array( $this, 'ot_change_image_button' ) );
-				return apply_filters( 'ot_upload_text', esc_html__( 'Send to OptionTree', 'option-tree' ) );
+				return apply_filters( 'ot_upload_text', esc_html__( 'Send to OptionTree', 'option-trees' ) );
 
 			}
 
